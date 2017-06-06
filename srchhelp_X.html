@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang=
+"en-US">
+
+<head>
+  <title>Miami University Libraries:Advanced Keyword Search</title>
+</head>
+
+<body>
+
+<!--{toplogo}-->
+
+          <h2>Advanced Keyword Search</h2>
+
+          <table border="0" align="center">
+            <tr>
+              <td>
+
+<form action="http://rocket.lib.muohio.edu/search/adv-cat-search.php" method="get" name="advSearch">
+<!--{msg}-->
+
+<script language="JavaScript">
+
+<!-- hide from older browsers
+
+/*
+replace function from http://tech.irt.org/articles/js037/index.htm#3
+*/
+
+function replace(string,text,by) {
+// Replaces text with by in string
+var strLength = string.length, txtLength = text.length;
+if ((strLength == 0) || (txtLength == 0)) return string;
+
+var i = string.indexOf(text);
+if ((!i) && (text != string.substring(0,txtLength))) return string;
+if (i == -1) return string;
+
+var newstr = string.substring(0,i) + by;
+
+if (i+txtLength < strLength)
+newstr += replace(string.substring(i+txtLength,strLength),text,by);
+
+return newstr;
+}
+
+function killScope(string) {
+var out = "&searchscope="; // replace this
+var temp = "" + string; // temporary holder
+var theBeginning = ""; // beginning of the string
+var theRest = ""; // end of the string
+
+var pos = temp.indexOf(out);
+theBeginning = "" + temp.substring(0, pos) + "";
+theRest = temp.substring((pos + out.length), temp.length);
+
+// as long as the character at the beginning of theRest is a number, delete it
+var firstChar = theRest.charAt(0);
+while ( firstChar >= "0" && firstChar <= "9" ) {
+theRest = theRest.substring(1);
+firstChar = theRest.charAt(0);
+    }
+
+temp = theBeginning + theRest;
+
+return temp;
+
+}
+
+var cURL=location.href;
+var cOLD="holmes.lib.muohio.edu";
+var cNEW="olc1.ohiolink.edu";
+var cSRCH=cURL.indexOf("=");
+var cIP="198.30.120.21";
+var FinalURL= replace(cURL,cOLD,cNEW);
+//document.write(FinalURL + '<br />');
+FinalURL= replace(FinalURL,cIP,cNEW); // so this will work with IPs as well as URLs
+//document.write(FinalURL + '<br />');
+if (FinalURL.indexOf("searchscope") > 1) {
+//document.write(FinalURL.indexOf("searchscope") + '<br />');
+FinalURL= killScope(FinalURL); // drop the scope because INNReach doesn't like scopes
+}
+//document.write(FinalURL + '<br />');
+FinalURL= replace(FinalURL,"NOSRCH","SEARCH"); // the modify search screen doesn't make sense without this
+//document.write(FinalURL + '<br />');
+if (cSRCH != -1) {
+document.write('<a href="' + FinalURL + '">Search OhioLINK Catalog</a><p>');
+}
+//document.write(FinalURL + '<br />');
+// -->
+
+</script>
+<p>Enter keywords in the boxes below, and then
+click the Search button to start the search.</p>
+
+<table border="0" id="adv-search-table" align="center">
+<tr>
+<th class="operator">&nbsp;</th>
+
+<th class="term" scope="col">Search for:</th>
+
+<th class="field" scope="col">In this
+field:</th>
+</tr>
+
+<tr>
+<td class="operator">&nbsp;</td>
+
+<td>
+<!--{search}-->
+</td>
+
+<td><select name="fieldA">
+<option value="">
+[Any field]
+</option>
+
+<option value="a">
+Author/Creator Names
+</option>
+
+<option value="t">
+Titles
+</option>
+
+<option value="d">
+Subject Headings
+</option>
+
+<option value="N">
+Publishers/Notes
+</option>
+</select></td>
+</tr>
+
+<tr>
+<td class="operator"><select name="opA">
+<option value="and">
+and
+</option>
+
+<option value="or">
+or
+</option>
+
+<option value="and not">
+not
+</option>
+</select></td>
+
+<td><input type="text" name="stringB" size=
+"40" /></td>
+
+<td><select name="fieldB">
+<option value="">
+[Any field]
+</option>
+
+<option value="a">
+Author/Creator Names
+</option>
+
+<option value="t">
+Titles
+</option>
+
+<option value="d">
+Subject Headings
+</option>
+
+<option value="N">
+Publishers/Notes
+</option>
+</select></td>
+</tr>
+
+<tr>
+<td class="operator"><select name="opB">
+<option value="and">
+and
+</option>
+
+<option value="or">
+or
+</option>
+
+<option value="and not">
+not
+</option>
+</select></td>
+
+<td><input type="text" name="stringC" size=
+"40" /></td>
+
+<td><select name="fieldC">
+<option value="">
+[Any field]
+</option>
+
+<option value="a">
+Author/Creator Names
+</option>
+
+<option value="t">
+Titles
+</option>
+
+<option value="d">
+Subject Headings
+</option>
+
+<option value="N">
+Publishers/Notes
+</option>
+</select></td>
+</tr>
+
+<tr>
+<td colspan="3"><input type="submit" value=
+"Search" /></td>
+</tr>
+</table>
+
+<table border="0" class="gray" align="center">
+<tr class="gray">
+<td colspan="2" class="gray"><b>Limit your
+search (optional)</b></td>
+</tr>
+
+<tr>
+<td class="gray">
+<table border="0" cellpadding="0" class=
+"gray">
+<tr>
+<td class="gray">Language:</td>
+
+<td class="gray"><select name="l">
+<option value="">
+ANY
+</option>
+
+<option value="eng">
+English
+</option>
+
+<option value="fre">
+French
+</option>
+
+<option value="ger">
+German
+</option>
+
+<option value="ita">
+Italian
+</option>
+
+<option value="spa">
+Spanish
+</option>
+
+<option value="jpn">
+Japanese
+</option>
+
+<option value="chi">
+Chinese
+</option>
+
+<option value="rus">
+Russian
+</option>
+</select></td>
+</tr>
+</table>
+</td>
+
+<td class="gray">
+<table border="0" class="gray" cellpadding=
+"0">
+<tr class="gray">
+<td class="gray">Material Type:</td>
+
+<td class="gray"><select name="m">
+<option value="">
+ANY
+</option>
+
+<option value="a">
+BOOK
+</option>
+
+<option value="s">
+PERIODICAL/SER
+</option>
+
+<option value="z">
+THESIS/DISS
+</option>
+
+<option value="c">
+MUSIC SCORE
+</option>
+
+<option value="d">
+SCORE, MSS.
+</option>
+
+<option value="e">
+MAP
+</option>
+
+<option value="f">
+MAP, MSS.
+</option>
+
+<option value="g">
+AUDIOVISUALS
+</option>
+
+<option value="h">
+MICROFRM ORIG
+</option>
+
+<option value="i">
+NON-MUSIC REC
+</option>
+
+<option value="j">
+MUSIC RECORD
+</option>
+
+<option value="k">
+2-D OBJECTS
+</option>
+
+<option value="m">
+COMPUTER FILE
+</option>
+
+<option value="n">
+INSTRUCT MAT
+</option>
+
+<option value="o">
+KIT
+</option>
+
+<option value="p">
+MIXED MATERIAL
+</option>
+
+<option value="r">
+3-D OBJECTS
+</option>
+
+<option value="t">
+MANUSCRIPT
+</option>
+
+<option value="@">
+EBOOKS
+</option>
+</select></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td class="gray">Search and Sort:
+<select name="SORT">
+<option value="D">
+Date
+</option>
+
+<option value="A">
+Alphabetical
+</option>
+
+<option value="R">
+Relevance
+</option>
+</select></td>
+
+<td class="gray">WHERE Item is located:
+<select name="b">
+<option value="">
+ANY
+</option>
+
+<option value="aal">
+Art Architecture
+</option>
+
+<option value="doc">
+Government &amp; Law
+</option>
+
+<option value="hal">
+Hamilton Campus
+</option>
+
+<option value="imc">
+IMC
+</option>
+
+<option value="kngl">
+King Library
+</option>
+
+<option value="gask">
+MCIS Media Center
+</option>
+
+<option value="mdl">
+Middletown Campus
+</option>
+
+<option value="mul">
+Music
+</option>
+
+<option value="murc">
+Music Listening Center
+</option>
+
+<option value="onl">
+Online
+</option>
+
+<option value="ext">
+Other Campus Collections
+</option>
+
+<option value="spe">
+Special Collections
+</option>
+
+<option value="scl">
+Science
+</option>
+
+<option value="swdep">
+SW Regional Depository
+</option>
+</select></td>
+</tr>
+
+<tr>
+<td align="center" colspan="2" class="gray">
+<table border="0">
+<tr>
+<td class="gray">Year:</td>
+
+<td class="gray">After <input type=
+"text" size="10" name="Da" /> and
+Before <input type="text" size="10"
+name="Db" /></td>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align="center" colspan="2" class="gray">
+<input type="submit" value="Search" /></td>
+</tr>
+</table>
+<br />
+<!--{availlim}-->
+</form>
+
+<table cellpadding="6" border="0" cellspacing="1"
+width="85%" align="center" class="gray">
+<tr valign="top" bgcolor="#CCCCCC">
+<th>&nbsp;</th>
+
+<th>Search Hints:</th>
+
+<th>Examples</th>
+</tr>
+<tr valign="top" bgcolor="#FFFFFF">
+<td class="gray2"><b>Truncation</b></td>
+
+<td class="gray2">Use * for right-hand or
+embedded truncation of 1-5 characters.<br />
+Use ** for right-hand-only truncation of any
+number of characters.<br />
+Use ? for right-hand or embedded truncation of
+a single character.<br />
+The * and ? truncation characters must have at
+least 2 characters to their LEFT.</td>
+
+<td class="gray2">
+<p class="examp"><kbd>environment*</kbd></p>
+
+<p><kbd>wom*n</kbd></p>
+
+<p><kbd>gender ident**</kbd></p>
+
+<p><kbd>duck?</kbd></p>
+
+<p><kbd>gentlem?n</kbd></p>
+</td>
+</tr>
+
+<tr valign="top" bgcolor="#CCCCCC">
+<td class="gray"><b>Operators</b></td>
+
+<td class="gray">Use "and" to specify ALL
+words. Use "or" to specify ANY single word. Use
+"and not" to exclude words. Use parentheses to
+group words with operators.</td>
+
+<td class="gray">
+<p><kbd>stock market and japan</kbd></p>
+
+<p><kbd>(alaska or canada) and
+adventure</kbd></p>
+
+<p><kbd>columbus and not
+christopher</kbd></p>
+</td>
+</tr>
+
+<tr valign="top" bgcolor="#FFFFFF">
+<td class="gray2"><b>Proximity</b></td>
+
+<td class="gray2">Use "near" to specify words
+within 10 words of each other, in any order.
+Use "within n" to specify words within "n"
+words of each other. The value of "n" has no
+limit.</td>
+
+<td class="gray2">
+<p><kbd>spectroscopy near polymer*</kbd></p>
+
+<p><kbd>ohio within 3 (native* or
+indian*)</kbd></p>
+</td>
+</tr>
+
+<tr valign="top" bgcolor="#CCCCCC">
+<td class="gray"><b>Fields</b></td>
+
+<td class="gray">
+Use labels to search specific fields:
+
+<ul>
+<li>a:author</li>
+
+<li>t:title</li>
+
+<li>s:subject</li>
+
+<li>n:note (includes publisher)</li>
+</ul>
+</td>
+
+<td class="gray">
+<p class="examp"><kbd>a:higham</kbd></p>
+
+<p><kbd>a:(twain or clemens) and
+t:huck**</kbd></p>
+
+<p><kbd>biological diversity and
+n:wiley</kbd></p>
+</td>
+</tr>
+</table><br />
+
+<!--{botlogo}-->

@@ -1,0 +1,123 @@
+<!--{toplogo}-->
+
+<!--Begin the main content table-->
+<table width="90%" border="0" cellspacing="0" cellpadding="5" align="center">
+<tr valign="top" class="pageMainArea">
+<td class="pageMainArea">&nbsp;
+<!--Beginning main page content-->
+
+<form name="patform" method="POST">
+<!--{iferrmsg}-->
+<br />
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+<br /><br />
+<!--{xif}-->
+</span>
+
+<!--{ifextpat}-->
+<table border="0" class="loginarea">
+<tr>
+<td valign="top">
+<table>
+<td valign="top" colspan="2">
+<strong>Students, Faculty, Staff, and Emeriti:</strong>
+</td>
+</tr>
+<tr>
+<td>
+Your UniqueID:
+</td>
+<td>
+<!--{extpatid}-->
+</td>
+</tr>
+<tr>
+<td>
+Your Password:
+</td>
+<td>
+<!--{extpatpw}-->
+</td>
+</tr>
+
+</table>
+</td>
+
+<td>&nbsp;&nbsp;&nbsp;</td>
+
+<td valign="top">
+
+<table>
+<tr>
+<td valign="top" colspan="2">
+<strong>Friends of the Libraries, Community Borrowers and Workshop Participants:</strong>
+</td>
+<!--{ifneedpatronname}-->
+<tr>
+<td>
+<!--{nameprompt}-->
+</td>
+<td>
+<!--{name}-->
+</td>
+</tr>
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<tr>
+<td>
+Library Barcode:
+ <!--{barcodeprompt}-->
+</td>
+<td>
+<!--{barcode}-->
+</td>
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<br />
+<!--{pin1prompt}-->
+&nbsp; &nbsp;
+<!--{pin1}-->
+<br />
+<!--{pin2prompt}-->
+&nbsp; &nbsp;
+<!--{pin2}-->
+<!--{else}-->
+<!--{pinprompt}-->
+&nbsp; &nbsp;
+<!--{pin}-->
+<br />
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br />
+<!--{xif}-->
+<input type="submit" value="Submit" />
+</form>
+
+<div align="left">
+</div>
+<!--End of main page content-->
+</td>
+</tr>
+</table>
+<!--End the main content table-->
+
+<script type="text/javascript" language="javascript">
+document.forms.patform.extpatid.focus();
+</script>
+
+ 
+<!--{botlogo}-->

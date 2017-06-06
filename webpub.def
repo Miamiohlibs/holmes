@@ -1,0 +1,91 @@
+# -----------------------------------------------------
+# Converted by cvpubdef from pubdef
+# -----------------------------------------------------
+#
+#
+# converted by cvpubdef from HOLDINGS_POS: atpeR
+#
+#
+# converted from HOLDINGS_POS field tag: 'a'
+#
+b|a||-6789|Author||b|
+#
+# converted from HOLDINGS_POS field tag: 't'
+#
+b|t||-6789|Title||b|
+#
+# converted from HOLDINGS_POS field tag: 'p'
+#
+b|p||-6789|Imprint||b|
+#
+# converted from HOLDINGS_POS field tag: 'e'
+#
+b|e||-6789|Edition||b|
+#
+# end HOLDINGS_POS
+#
+#
+# next line added by cvpubdef
+b|H|||||
+#
+b|r||-6789|Descript.||b|
+b|s||-6789|Series||b|
+b|h||-6789|Lib. Has||b|
+b|n||-6789|Note||b|
+b|w||-6789|Related To||b|
+b|u||-6789|Alt Title||b|
+b|q||-6789|Link||b|
+b|x||-6789|Continues||b|
+b|z||-6789|Cont'd By||b|
+b|j||-6789|||b|
+b|d||-6789|Subject||b|
+b|b||-6789|Add Author||b|
+b|y|856|-6789|Url||b|
+b|y|[^89]..|-6789|||b|
+b|y|8[^5].|-6789|||b|
+b|y|85[^6]|-6789|||b|
+b|y|956|-6789|Url||b|
+#b|y|[^0]..|-6789|||b|
+b|y|9[^5].|-6789|||b|
+b|y|95[^6]|-6789|||b|
+b|y||-6789|Marc||b|
+c|i||+|Identity||b|
+b|g||-6789|Govt. Doc#||b|
+#|o|o|0|+
+c|$||+|Location||b|&nbsp;
+c|C||+|||b|&nbsp;
+c|Q||||b|
+c|h||-8x|Lib. Has||b|
+c|2||+|Latest Received||b|&nbsp;
+c|3||+|Latest Received||b|
+c|Q||||b|
+b|c||-6789|Call #||b|
+e|t|||Resource Name||e|
+e|x|||Alternate Resource Name||e|
+e|e|||Description||e|
+e|u|||Trial Information||e|
+e|g|||User Support||e|
+e|f|||Public Note||e|
+e|s|||Pricing & Payment||e|
+e|w|||||e|
+e|v|||Resource Type||e|
+e|b|||Resource Format||e|
+e|h|||Coverage||e|
+e|a|||Author||e|
+e|d|||Subject||e|
+e|k|||Resource Advisory||e|
+#
+# end pubdef
+#
+#
+# -----------------------------------------------------
+# Converted by cvpubdef from item_col_width: 1(20)[LOCATION],Cv#(30)[CALL NO.],%
+# -----------------------------------------------------
+i|1|||LOCATION|25|b|
+i|C||||0|b|&nbsp;
+i|v||||0|b|&nbsp;
+i|#|||CALL NO.|38|b|
+i|Q||||b|
+i|%||||0|b|
+#
+#end converted webpub.def

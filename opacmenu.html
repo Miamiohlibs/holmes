@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html> 
+<head> 
+<title>Miami University Libraries | Classic Catalog</title> 
+<base target="_self"/> 
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" /> 
+<link rel="stylesheet" type="text/css" href="https://rocket.lib.muohio.edu/iii/holmes.css" /> 
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" /> 
+<script language="JavaScript" type="text/javascript" src="/scripts/common.js"></script> 
+<script language="JavaScript" type="text/javascript" src="/scripts/elcontent.js"></script> 
+ 
+<script language="JavaScript" type="text/javascript" src="//www.lib.muohio.edu/includes/jquery.js"></script> 
+</head> 
+<body  > 
+
+<!--{toplogo}-->
+
+<h2>Miami University Libraries: Classic Catalog</h2>
+
+<table align="center" width="99%">
+<tr valign="top">
+    <td align="left" width="33%"><a href="http://olc1.ohiolink.edu/search/">OhioLINK</a></td>
+    <td align="center" width="33%"><a href="telnet://holmes.lib.muohio.edu">Telnet version </a><br />Login as <em>library</em></td>
+<td align="right" width="33%"><a href="http://www.lib.muohio.edu/multifacet/">New Catalog</a></td>
+</tr>
+</table>
+           <div id="libbody">
+
+
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+
+  #searchhelpa,
+  #searchhelpd,
+  #searchhelpt {
+    /* Needed for NS4 */
+    display: none;
+  }
+
+
+@media screen, projection {
+  p.examples {
+    font-size: 95%;
+    margin-top: .25em;
+    margin-bottom: .25em;
+    border-bottom: 1px solid #333;
+  }
+
+  #searcharg {
+    width: 75% !important;
+    max-width: 45em;
+    font-size: 110%;
+  }
+
+  input.submit {
+    font-size: 95%;
+  }
+
+  #search-table {
+    border: none;
+  }
+
+  #search-table td {
+    vertical-align: top;
+    padding: .5em;
+  }
+
+  #searcharg-box, #searchtype-box {
+    text-align: right;
+  }
+
+  #searchtype-input {
+    vertical-align: top;
+    padding: 0 1em;
+  }
+
+  em.note {
+    font-style: normal;
+    padding: 0 .18em;
+  }
+  
+
+  #search-form {
+    margin-bottom: 1em;
+  }
+
+  #searchhelpX {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 28em;
+    margin-top: 13em;
+    margin-right: 9em;
+  }
+
+  #searchhelpa,
+  #searchhelpd,
+  #searchhelpt
+  {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 28em;
+    margin-top: 13em;
+    margin-right: 9em;
+  }
+
+}
+
+  /* For NS4 */
+  #searchhelpX {
+    visibility: visible;
+  }
+
+  #searchhelpa,
+  #searchhelpd,
+  #searchhelpt {
+    visibility: hidden;
+  }
+
+
+-->
+/*]]>*/
+</style>
+
+      <div id="search-form">
+        <form action="/search/~" method="get" id="search" name=
+        "search">
+          <table id="search-table" align="center">
+            <tr>
+              <td id="searchtype-box"><strong>Search for:</strong></td>
+
+              <td id="searchtype-input">
+                <p id="search-type-buttons"><input type="radio" id=
+                "searchX" name="searchtype" value="X" onfocus=
+                "divshow('searchhelpX')" checked=
+                "checked" />&nbsp;<label for=
+                "searchX">Keywords</label>&nbsp;<input type=
+                "radio" id="searcha" name="searchtype" onfocus=
+                "divshow('searchhelpa')" value=
+                "a" />&nbsp;<label for=
+                "searcha">Author</label>&nbsp;<input type="radio"
+                id="searcht" name="searchtype" onfocus=
+                "divshow('searchhelpt')" value=
+                "t" />&nbsp;<label for=
+                "searcht">Title</label>&nbsp;<input type="radio"
+                id="searchd" name="searchtype" onfocus=
+                "divshow('searchhelpd')" value=
+                "d" />&nbsp;<label for=
+                "searchd">Subject&nbsp;Heading</label><br />
+                <a href="http://rocket.lib.muohio.edu/search/srchhelp_X.php">Advanced keyword
+                search</a>&nbsp;<a href=
+                "/screens/fullmenu.html">All search options</a></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td id="searcharg-box"><strong><label for=
+              "searcharg">Your search:</label></strong></td>
+
+              <td id="searcharg-input"><input class="searcharg"
+              name="searcharg" id="searcharg" size="22" />
+              <input type="hidden" name="SORT" value="D" />
+<br />
+Limit results to:
+<!--{scope}-->
+<br />
+<!--{availlim}-->
+<p>
+              <input type="submit" value="Search Now" class=
+              "submit" />
+</p>
+</td>
+            </tr>
+          </table>
+        </form>
+      </div><!--
+////////////////////////////////////////////
+-->
+
+<!--{botlogo}-->    
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<HTML>
+
+<HEAD><TITLE>MU Catalog Word Search</TITLE>
+</HEAD>
+
+
+<body bgcolor="#FFEBCD" text="#000008" link="#00008B" alink="#ff1000"
+vlink="#8B4513"
+onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
+
+<div align=right>
+
+<font size="2">
+Miami University Libraries Catalog (Sherlock)
+<br>Oxford, Ohio
+</font></div>  
+<hr>
+<h3 align="center">Advanced Keyword Search</h3>
+
+<form method="GET">
+
+<table
+border="0" cell padding="6" cellspacing="0" align="center" bgcolor="#cdaa7d">
+<tr>
+<td align="center" colspan="2" class="main">
+
+<p>Click in the box, type your search, and then click the
+"Search" button:<br>
+<INPUT TYPE=TEXT NAME=SEARCH SIZE=48 VALUE="">
+</td>
+</tr>
+
+<tr><td class="main">
+<table border=0 cellpadding="5">
+<tr><td>Language:</td><td><select name=l>
+<option value="">ANY
+<option value="eng">English
+<option value="fre">French
+<option value="ger">German
+<option value="ita">Italian
+<option value="spa">Spanish
+<option value="jpn">Japanese
+<option value="chi">Chinese
+<option value="rus">Russian
+</select>
+</td>
+</tr></table>
+
+</td>
+<td class="main">
+<table border=0>
+<tr><td>Material Type:</td><td><select name=m>
+<option value="">ANY
+<option value="a">BOOK
+<option value="s">PERIODICAL/SER
+<option value="z">THESIS/DISS
+<option value="c">MUSIC SCORE
+<option value="d">SCORE, MSS.
+<option value="e">MAP
+<option value="f">MAP, MSS.
+<option value="g">AUDIOVISUALS
+<option value="h">MICROFRM ORIG
+<option value="i">NON-MUSIC REC
+<option value="j">MUSIC RECORD
+<option value="k">2-D OBJECTS
+<option value="m">COMPUTER FILE
+<option value="n">INSTRUCT MAT
+<option value="o">KIT
+<option value="p">MIXED MATERIAL
+<option value="r">3-D OBJECTS
+<option value="t">MANUSCRIPT
+<option value="@">EBOOKS
+</select>
+</td>
+</tr></table>
+
+</td>
+</tr>
+
+<td>
+Search and Sort:
+<SELECT NAME=SORT>
+<OPTION VALUE=D>Date
+<OPTION VALUE=A>Alphabetical
+<OPTION VALUE=R>Relevance
+</SELECT>
+<td>
+WHERE
+Item is located: <select name=W>
+<option value="">ANY
+<option value="aal">Art Architecture
+<option value="doc">Documents
+<option value="hal">Hamilton Campus
+<option value="imc">IMC
+<option value="kngl">King Library
+<option value="gask">MCIS Media Center
+<option value="mdl">Middletown Campus
+<option value="mul">Music
+<option value="murc">Music Listening Center
+<option value="onl">Online
+<option value="ext">Other Campus Collections
+<option value="spe">Special Collections
+<option value="scl">Science
+<option value="swdep">SW Regional Depository
+</select>
+<tr><td align="center" colspan="2" class="main">
+
+<table border=0>
+<tr><td>Year:</td><td>After <input type=text size=10 name=Da value=> and
+Before <input type=text size=10 name=Db value=>
+</tr></table>
+
+</td></tr>
+
+<tr><td align="center" colspan="2" class="main">
+<INPUT TYPE=SUBMIT VALUE="Search">
+</td>
+</tr>
+</table>
+</form>
+
+
+<table cellpadding="6" border="0" cellspacing="0"
+  width="90%" align="center" class="explanation">
+<col width="12%">
+<col width="36%">
+<col width="52%">
+
+<tr valign="top">
+<th>&nbsp;</th>
+<th>Search Hints: </th>
+<th>Examples</th>
+</tr>
+</table>
+<table width="85%" align="center" border=0 cellpadding="5">
+<tr valign="top" bgcolor="#cdaa7d">
+<td><b>Adjacency</b></td>
+<td>Search multiple words together as a phrase.  Adjacency is
+the default search.</td>
+<td><p class="examp"><kbd>stock market</kbd></p></td>
+</tr>
+
+<!--
+<tr valign="top" BGCOLOR="#FFE4BO">
+-->
+<tr valign="top"  bgcolor="#ffe4b0">
+
+<td><b>Truncation</b></td>
+<td>
+Use * for right-hand or embedded truncation of 1-5 characters.<br>
+Use ** for right-hand-only truncation of any number of characters.<br>
+Use ? for right-hand or embedded truncation of a single character.<br>
+The * and ? truncation characters must have at least 2 characters to their
+LEFT.</td>
+<td><p class="examp"><kbd>environment*</kbd></p>
+  <p><kbd>wom*n</kbd></p>
+<p><kbd>gender ident**</kbd></p>
+<p><kbd>duck?</kbd></p>
+<p><kbd>gentlem?n</kbd></td>
+</tr>
+
+<tr valign="top"  bgcolor="#cdaa7d">
+
+<td><b>Operators</b></td>
+<td>Use &quot;and&quot; to specify ALL words.  Use
+&quot;or&quot; to specify
+ANY single word.  
+Use &quot;and not&quot; to exclude words. Use
+  parentheses to group words with operators.</td>
+<td><p><kbd>stock market and japan</kbd></p>
+  <p><kbd>(alaska or canada) and adventure</kbd></p>
+  <p><kbd>columbus and not christopher</kbd></p></td>
+</tr>
+
+<tr valign="top"   bgcolor="#ffe4b0">
+<td><b>Proximity</b></td>
+<td>Use &quot;near&quot; to specify words within 10
+  words of each other, in any order.  Use &quot;within n&quot; to 
+  specify words within &quot;n&quot; words of each other.  The value
+  of &quot;n&quot; has no limit.</td>
+<td><p><kbd>spectroscopy near
+polymer*</kbd></p>
+  <p><kbd>ohio within 3 (native* or indian*)</kbd></p></td>
+</tr>
+
+<tr valign="top"  bgcolor="#cdaa7d">
+<td><b>Fields</b></td>
+<td>Use labels to search specific fields:
+  <ul>
+  <li>a:author</li>
+  <li>t:title</li>
+  <li>s:subject</li>
+  <li>n:note (includes publisher)</li>
+  </ul>
+  </td>
+
+<td><p class="examp"><kbd>a:higham</kbd></p>
+<p><kbd>a:(twain or clemens) and t:huck**</kbd></p>
+<p><kbd>biological diversity and n:wiley</kbd></p></td>
+</tr>
+</table>
+
+<br><br>
+<hr>
+<center>
+<font size="2">
+<P><A HREF="http://www.lib.muohio.edu/mcat/about.html">About the Catalog
+</A><BR>
+<A HREF="http://www.lib.muohio.edu/new/newbks/">New Books List</A> &#160;
+| &#160; <A HREF="http://www.lib.muohio.edu/mcat/othcol.html">Other
+Collections</A> &#160; | &#160; <A
+HREF="http://holmes.lib.muohio.edu/patroninfo.html">View Your Circulation
+Record</A><BR>
+<A HREF="http://www.lib.muohio.edu/requests/acquire.html">Items
+to Acquire</A> &#160; | &#160; <A
+HREF="http://www.lib.muohio.edu/ill/">Interlibrary Loan Request </A>&#160;
+| &#160; <A
+HREF="http://www.lib.muohio.edu/mcat/catcom.html">Comments </A>&#160;|
+&#160; <A HREF="http://www.lib.muohio.edu/">MiamiLINK</A>
+</font>
+</CENTER>
+
+</BODY>
+</HTML> 

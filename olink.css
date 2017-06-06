@@ -1,0 +1,317 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin-right: 2em;
+  margin-left: 2em;
+  background: #666699 url(cat-header.jpg) 
+  no-repeat fixed top left !important;
+  margin-left: 120px;
+  margin-right: 100px;
+}
+
+body.mainpage {
+  font-family: Verdana, Arial, sans-serif;
+  margin-right: 2em;
+  margin-left: 2em;
+  background: #666699 !important;
+}
+
+body.rendered {
+  color: black;
+  background: white url(cat-he:w
+ader.jpg) no-repeat fixed top left;
+  font-family: Verdana, Arial, sans-serif;
+  margin-left: 120px;
+  margin-right: 100px;
+}
+
+}
+
+a:link {
+  color: #0000AA;
+  background: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0000AA;
+  background: inherit;
+}
+
+a:hover {
+  color: #0000AA;
+  background: #DDD;
+}
+
+a:active {
+  color: #09F;
+  background: #CCC;
+}
+
+a.note {
+  color: #0000FF;
+  background: #FF9;
+}
+
+.note {
+  color: black;
+  background: #FF9;
+  padding: .1em;
+}
+
+table {
+  border: thin solid #333366;
+  padding: .15em;
+  background: inherit !important;
+  margin-bottom: .5em;
+}
+
+table.logo {
+  border: none;
+  padding: .15em;
+  background: inherit !important;
+  margin-bottom: .5em;
+}
+
+table table {
+  border: thin none;
+  padding: 0;
+  margin: 0;
+}
+
+td, th {
+  font-family: Verdana, Arial, sans-serif;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 11pt;
+}
+
+td.header {
+
+  background-image:  url(../pattern.gif);
+  color: #333366;
+}
+
+td.header2 {
+  background: #666699;
+}
+
+td.header3 {
+  background: #333366;
+  
+}
+
+h1, h2, h3 {
+  font-family: Georgia, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 11pt;
+} 
+
+p.note  {
+  color: #000040;
+  background: #333366;
+}
+
+p.top-buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+br {
+  line-height: 50%;
+}
+
+p.top-buttons img {
+  border: thin none !important;
+}
+
+
+
+/* Here's where the III stuff starts */
+
+table.browseWidgit {
+  border: thin none;
+  margin: .15em;
+}
+
+tr.browseHeader td, tr.browseHeader th {
+  background: #AAA;
+  color: black;
+  border-bottom: thin solid gray;
+  font-weight: normal !important;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 95%;
+  padding: .15em .35em;
+  vertical-align: bottom;
+}
+
+td.browseHeaderNum, td.browseHeaderMark {
+  width: 1.5em;
+  padding: .15em .15em !important;
+}
+
+td.browseHeaderData {
+  text-align: left !important;
+}
+
+td.browseHeaderEntries {
+  text-align: right !important;
+}
+
+td.browseHeaderMedia {
+  text-align: center;
+}
+
+tr.browseEntry td {
+  background: #E0E0D9;
+  color: black;
+  padding: .15em .35em;
+  vertical-align: top;
+  border-top: thin solid white;
+}
+
+tr.browseEntry a:link {
+  background: #E0E0D9 !important;
+  color: #0000AA;
+}
+
+tr.browseEntry a:visited {
+  background: #E0E0D9 !important;
+  color: #0000AA;
+  text-decoration: none;
+}
+
+tr.browseEntry a:hover {
+  background: #CCC !important;
+  color: #0000AA;
+}
+
+tr.browseEntry a:active {
+  background: #CCC !important;
+  color: #09F;
+}
+
+td.browseEntryData a:link {
+  background: #E0E0D9;
+  color: #0000AA;
+}
+
+td.browseEntryData a:visited {
+  background: #E0E0D9;
+  color: #0000AA;
+}
+
+td.browseEntryData a:hover {
+  background: #CCC;
+  color: #0000AA;
+}
+
+td.browseEntryData a:active {
+  background: #CCC;
+  color: #09F;
+}
+
+td.browseEntryMedia, td.browseSubEntryMedia {
+  font-size: 83%;
+  text-align: center;
+}
+
+td.browseEntryRelevance, td.browseSubEntryYear {
+  text-align: right;
+}
+
+tr.browseSubEntry td {
+  font-size: 92%;
+  color: black !important;
+  background: #E0E0D9 !important;
+  vertical-align: top;
+  padding-bottom: .5em;
+  /*border-bottom: thin solid white;*/
+}
+
+tr.browseSuperEntry strong {
+  font-weight: normal;
+}
+
+tr.browseSuperEntry td {
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: normal !normal;
+  background: #E0E0D9 !important;
+  color: black !important;
+  padding-left: .25em;
+}
+
+table.centralInstTable {
+  border: thin solid #741;
+  margin-bottom: 1em;
+}
+
+table.centralInstTable td {
+  background: #E0E0D9;
+  color: black;
+  font-size: 105%;
+  padding: .15em .25em;
+  margin: .2em;
+}
+
+table.centralHoldingsTable {
+  border: thin solid #741;
+  margin-bottom: 1em;
+}
+
+table.centralHoldingsTable td {
+  border-bottom: 1px solid #999;
+  vertical-align: top;
+  padding: .15em .25em;
+}
+
+table.centralHoldingsTable th {
+  vertical-align: bottom;
+  background: #E0E0D9;
+  color: black;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: normal !important;
+  padding: .15em .25em;
+}
+
+font[color~="red"] {
+  color: black;
+  background: #FF9;
+  font-weight: normal !important;
+}
+
+tr.browseSubEntry td.browseEntryNum {
+  color: black;
+  background: white;
+}
+
+tr.browseSubEntry td.browseEntryMark {
+  color: black;
+  background: white;
+}
+
+td.browseSubEntry td.browseEntryData {
+  border-bottom: thin solid white !important;
+}
+
+#msg {
+  width: 14em;
+  line-height: 50%;
+  padding: .15em .25em;
+}
+
+#msg h2 {
+  font-size: small;
+  color: black;
+  background: #FF9;
+  padding: .15em;
+}
+
+span.holdings-summary {
+  font-weight: bold;
+  color: black;
+  background: #FF9;
+}
+
+  
+
