@@ -28,6 +28,7 @@ b|e||-6789|Edition||b|
 # next line added by cvpubdef
 b|H|||||
 #
+#Bibliographic
 b|r||-6789|Descript.||b|
 b|s||-6789|Series||b|
 b|h||-6789|Lib. Has||b|
@@ -49,8 +50,11 @@ b|y|956|-6789|Url||b|
 b|y|9[^5].|-6789|||b|
 b|y|95[^6]|-6789|||b|
 b|y||-6789|Marc||b|
-c|i||+|Identity||b|
+b|c||-6789|Call #||b|
 b|g||-6789|Govt. Doc#||b|
+#
+#Checkin/Holdings
+c|i||+|Identity||b|
 #|o|o|0|+
 c|$||+|Location||b|&nbsp;
 c|C||+|||b|&nbsp;
@@ -59,7 +63,8 @@ c|h||-8x|Lib. Has||b|
 c|2||+|Latest Received||b|&nbsp;
 c|3||+|Latest Received||b|
 c|Q||||b|
-b|c||-6789|Call #||b|
+#
+#Resources
 e|t|||Resource Name||e|
 e|x|||Alternate Resource Name||e|
 e|e|||Description||e|
