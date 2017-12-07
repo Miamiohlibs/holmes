@@ -6,8 +6,8 @@
 # converted by cvpubdef from HOLDINGS_POS: atpeR
 #
 #
-# converted from HOLDINGS_POS field tag: 'a'
-#
+#Author
+b|a||ae-0|Author||b|
 b|a||-6789|Author||b|
 #
 # converted from HOLDINGS_POS field tag: 't'
@@ -29,7 +29,7 @@ b|e||-6789|Edition||b|
 b|H|||||
 #
 #Author
-b|a|100|-0||
+b|a||ae-0|Author||b|
 #
 #Bibliographic
 b|r||-6789|Descript.||b|
