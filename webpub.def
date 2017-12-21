@@ -7,7 +7,7 @@
 #
 #
 #Author
-b|a||ae-0|Author||b|
+b|a||-0|Author||b|
 b|a||-6789|Author||b|
 #
 # converted from HOLDINGS_POS field tag: 't'
@@ -28,8 +28,6 @@ b|e||-6789|Edition||b|
 # next line added by cvpubdef
 b|H|||||
 #
-#Author
-b|a||ae-0|Author||b|
 #
 #Bibliographic
 b|r||-6789|Descript.||b|
