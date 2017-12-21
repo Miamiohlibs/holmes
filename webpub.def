@@ -31,7 +31,7 @@ b|H|||||
 #
 #Bibliographic
 b|r||-6789|Descript.||b|
-b|s||-6789|Series||b|
+b|s||-06789|Series||b|
 b|h||-6789|Lib. Has||b|
 b|n||-6789|Note||b|
 b|w||-6789|Related To||b|
@@ -40,8 +40,8 @@ b|q||-6789|Link||b|
 b|x||-6789|Continues||b|
 b|z||-6789|Cont'd By||b|
 b|j||-6789|||b|
-b|d||-6789|Subject||b|
-b|b||-6789|Add Author||b|
+b|d||-06789|Subject||b|
+b|b||-06789|Add Author||b|
 b|y|856|-6789|Url||b|
 b|y|[^89]..|-6789|||b|
 b|y|8[^5].|-6789|||b|
