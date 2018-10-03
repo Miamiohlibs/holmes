@@ -18,15 +18,30 @@
 
           <h2>Course Reserve Search</h2>
 
-<form method="get" action=
-"http://holmes.lib.muohio.edu/search/r?r"
-id="search" name="search">
-<input type="text" name="SEARCH" maxlength="64"
-size="49" /> <input type=
-"submit" value="Search" />
-<br />
-<!--{availlim}-->
+<form name="searchtool" target="_self" action="/search~S9/" method='GET'>
+      <label for="searchtype" style="display:none;">SearchType</label> <select name="searchtype" id="searchtype" onChange="initSort()">
+        <option value="r" selected="selected"> COURSE</option>
+        <option value="p"> PROF/TA</option>
+      </select>
+      &nbsp;
+      <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="" />
+      &nbsp;
+
+<span id="sort_cell">
+</span>
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+initSort();
+// Unhide the JS -->
+</script>
+      <input type="hidden" name="SORT" value="D" /><input type="hidden" name="extended" value="0" />      <input type="submit" name="SUBMIT" value="Search" onclick='return searchtoolSubmitAction();' />
+<div>
+      <input type="hidden" name="searchlimits" value="" />
+      <input type="hidden" name="searchorigarg" value="" />
+</div>
 </form>
+
 <dl>
 <dd>
 Type the <b>Course Name</b> or
