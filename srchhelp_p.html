@@ -50,8 +50,8 @@ var nonSortTags = "XYZprWw"
 </script>
 <form name="searchtool" target="_self" action="/search~S9/" method='GET'>
       <label for="searchtype" style="display:none;">SearchType</label> <select name="searchtype" id="searchtype" onChange="initSort()">
-        <option value="p"> PROF/TA</option>
-        <option value="r" selected="selected"> COURSE</option>
+        <option value="p" selected="selected"> PROF/TA</option>
+        <option value="r"> COURSE</option>
       </select>
       &nbsp;
       <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="" />
