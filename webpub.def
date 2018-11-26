@@ -53,6 +53,9 @@ b|y|95[^6]|-6789|||b|
 b|y||-6789|Marc||b|
 b|c||-6789|Call #||b|
 b|g||-6789|Govt. Doc#||b|
+b|i|020|-6789|ISBN||b|
+b|i|022|-6789|ISSN||b|
+b|i|024|-6789|ISRC||b|
 #
 #Checkin/Holdings
 c|i||+|Identity||b|
